@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="825px" height="580px" viewBox="0 0 825 580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 825 0 825 580 0 580"></polygon>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-v2" transform="translate(-615.000000, -139.000000)">
+            <g id="Home">
+                <g id="Group-3" transform="translate(615.000000, 139.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M825,58.5612524 L825,515.58512 C674.942991,590.848368 473.099429,579.953003 406.974623,578.816555 C291.556301,576.834379 -204.412717,493.582959 94.3558538,163.880906 C293.475543,-55.8565921 624.046808,-14.6735682 825,58.5612524" id="Fill-1" fill="#F3F4F8" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

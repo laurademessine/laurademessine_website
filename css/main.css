@@ -1,0 +1,151 @@
+
+/*
+GLOBAL
+*/
+.heading-site {
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+}
+
+.h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 31px;
+}
+
+.h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: medium;
+}
+
+.h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: small;
+	color:#9B9B9B;
+	text-align: center;
+	margin-bottom: 1.05em;
+}
+
+.p {
+	font-family:'Nunito', sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+.block {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+.box {
+	text-align: center;
+}
+
+body {
+	font-size: 16px;
+
+}
+
+/*
+HEADER
+*/
+.header {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	height:70px;
+	line-height:70px;
+	background-color:white;
+	position:fixed;
+	top:0;
+	transition: top 0.2s ease-in-out;
+}
+
+
+
+.navbar-item a:hover {
+	color:#C277FF;	
+}
+
+.header-cv {
+	color: white;
+	background-image: linear-gradient(to right, #788EF7, #C277FF);
+	border-radius: 150px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-weight: 700;
+	height: 40px;
+    margin-top: 7px;
+}
+
+.header-cv a:hover {
+	color: white;
+	background-image: grey;
+	border-radius: 150px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-weight: 700;
+}
+
+
+/*HOME*/
+.hello {
+	font-family:'Nunito', sans-serif;
+	font-weight: 900;
+	font-size: 70px;
+}
+
+.hello .hello-laura {
+	font-weight:700;
+	font-size:50px;
+}
+
+.hello .position {
+	font-family:'Nunito', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.handwritten {
+	font-family: 'Kalam', cursive;
+}
+
+.illustration {
+	text-align: center;
+	margin-right:30px;
+}
+
+.button-cv {
+	color: white;
+	font-family:'Nunito', sans-serif;
+	background-image: linear-gradient(to right, #788EF7, #C277FF);
+	border-radius: 150px;
+	padding:7px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-weight: 200;
+	font-size: medium;
+	margin-top: 1.25em;
+	text-align: left;
+}
+
+/*COMPÉTENCES*/
+
+.astronaut-girl {
+	text-align:left;
+	position:relative;
+	margin-bottom:51%;
+	margin-left: 12px;
+
+
+}
+
+.astronaut-pool {
+	top:30;
+	margin-top:30%;
+	margin-left: -50%;
+	position:relative;
+	z-index: -1;
+	text-align:left;
+}
+
