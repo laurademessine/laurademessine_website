@@ -28,88 +28,63 @@
 	<!-- body -->
 	<body>
 		<!-- scripts -->
-		<!-- Vue.js -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.js"></script>
-		<!-- jquery -->	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="/js/main.js"></script>
-			
-		<!-- header -->
-		
-		<!-- Hero head: will stick at the top -->
-		  <div class="hero-head">
-		    <header class="navbar">
-		      <div class="container">
-		        <div class="navbar-brand">
-		          <a class="navbar-item">
-		            <img src="/img/header.png" alt="Logo">
-		          </a>
-		          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-		            <span></span>
-		            <span></span>
-		            <span></span>
-		          </span>
-		        </div>
-		        <div id="navbarMenuHeroC" class="navbar-menu">
-		          <div class="navbar-end">
-		            <a class="navbar-item">À propos</a>
-		            <a class="navbar-item">Mes projets</a>
-		            <a class="navbar-item" href="mailto:contact@laura-demessine.com">Contact</a>
-		            <a class="navbar-item">Blog</a>
-		            <a href="laura-demessine.com/cv" class="header-cv navbar-item">Télécharger CV</a>
-		            <a class="navbar-item" href="laura-demessine.com/en">EN</a>
-		          </div>
-		        </div>
-		      </div>
-		    </header>
-		  </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
 
-<!--
-		<div class="block"> 
-			<header class="header">
-			<a href="laura-demessine.com" class="header-logo"><img src="/img/header.png" alt="logo laura demessine" title="logo Laura Demessine!"/></a>	
-				<nav class="header-menu">	
-					<a data-view="#home">À propos</a>
-					<a href="#portfolio">Mes projets</a>
-					<a href="#blog">Blog</a>
-					<a href="mailto:contact@laura-demessine.com">Contact</a>
-					<a href="laura-demessine.com/en">EN</a>
-					<a href="laura-demessine.com/cv" class="header-cv">Télécharger CV</a>
-				</nav>
-			</header>	
-		</div>
--->			
 		<!-- header -->
-		<!-- Hero content: will be in the middle -->
-
-		      
-		      
-		   
+		<section id="menu">
+			<nav>
+				<div class="menu">
+					<ul>
+				      <li><a class="underbar nav-link" href="/#">À propos</a></li>
+				      <li><a class="underbar nav-link" href="/#project">Mes projets</a></li>
+				      <li><a class="underbar nav-link" href="mailto:contact@laura-demessine.com">Contact</a></li>
+				      <li><a class="underbar nav-link">Blog</a></li>
+				      <li><a class="header-cv" href="/cv.pdf">Télécharger CV</a></li>
+				      <li><a class="underbar nav-link" href="/en">EN</a></li>
+				    </ul>
+				 </div>
+			</nav>
+		 </section>  
 		<!-- section : hello -->
 		<section id="home" class="section" class="hero is-fullheight">
 			<div class="hero-body">
 				<div class="container has-text-left">
 					<div class="columns is-2-desktop is-1-mobile">
-						<div class="column hello">
-							<h1><span class="hello">Hello !</span></h1>
+						<div class="column hello" id="hello">
+							<h1><span class="hello underline">Hello !</span></h1>
 							<p class="hello-laura">Je m'appelle Laura Demessine</p>
 							<p class="position">Digital producer @BBS</p>
-							<p class=p>Je suis chef de projet digital en alternance chez Big Boss Studio, un studio de production digital web et mobile à Paris. J'étudie en parallèle à Grenoble École de Management et j'écris mon mémoire sur comment résoudre les incompatibilités entre design thinking et méthodologie agile.</p>
-							<p class=p>Je suis disponible à partir de Septembre 2019 pour de nouvelles aventures post-diplomation.</p>
-							<button class="button-cv" a href="laura-demessine.com/cv.pdf">Télécharger mon CV</button>
+							<p class="p">Je suis chef de projet digital en alternance chez Big Boss Studio, un studio de production digital web et mobile à Paris. J'étudie en parallèle à Grenoble École de Management et j'écris mon mémoire sur comment résoudre les incompatibilités entre design thinking et méthodologie agile.
+							<br>Je suis disponible à partir de Septembre 2019 pour de nouvelles aventures post-diplôme.</p>
+							<button class="button-cv"><a href="/cv.pdf">Télécharger mon CV</a></button>
 						</div>
+						
 						<div class="column">
-							<div class="illustration">
-							<img src="/img/home.svg" alt="Laura Demessine illustration" height="485" width="240" />
+							<div class="illustrations" id="home">
+								<div class="illustration-wrapper" id="shape">
+									<img src="/img/home-shape.svg" alt="shape" height="120%">
+								</div>
+
+								<div class="illustration-wrapper" id="girl">
+									<img src="/img/home.svg" alt="Laura Demessine illustration" height="50%">
+								</div>
+								
+								<div class="illustration-wrapper" id="plant" width="30%">
+									<img src="/img/home-plant.svg" alt="plant">
+								</div>	
 							</div>
 						</div>
 					</div>
 				</div>	
 			</div>	
-		</section>
 
 		<!-- section : Compétences -->
-		<section id="competences" class="section" class="hero is-fullheight">
 		<div class="hero-body">	
 			<div class="container">
 			<h1 class=h1>Compétences</h1>	
@@ -281,10 +256,12 @@
 		<section id="blog" class="section" class="hero is-fullheight">
 			<div class="block">
 			<h1 class=h1>Blog</h1>
-
 			</div>
 		</section>	
 		<!-- section : Blog -->
+
+		<!-- JS -->
+		<script src="main.js"></script>
 
 	</body>
 </html>
