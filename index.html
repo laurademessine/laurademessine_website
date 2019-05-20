@@ -28,7 +28,6 @@
 	<!-- body -->
 	<body>
 		<!-- scripts -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="/js/main.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
@@ -38,8 +37,7 @@
 
 		<!-- header -->
 		<section id="menu">
-			<nav>
-				<div class="menu">
+			<nav class="menu">
 					<ul>
 				      <li><a class="underbar nav-link" href="/#">À propos</a></li>
 				      <li><a class="underbar nav-link" href="/#project">Mes projets</a></li>
@@ -48,15 +46,13 @@
 				      <li><a class="header-cv" href="/cv.pdf">Télécharger CV</a></li>
 				      <li><a class="underbar nav-link" href="/en">EN</a></li>
 				    </ul>
-				 </div>
 			</nav>
-		 </section>  
-		<!-- section : hello -->
-		<section id="home" class="section" class="hero is-fullheight">
-			<div class="hero-body">
-				<div class="container has-text-left">
+		</section>
+		<!-- Hello -->
+		<section id="hello">
+			<div class="container has-text-left">
 					<div class="columns is-2-desktop is-1-mobile">
-						<div class="column hello" id="hello">
+						<div class="column hello">
 							<h1><span class="hello underline">Hello !</span></h1>
 							<p class="hello-laura">Je m'appelle Laura Demessine</p>
 							<p class="position">Digital producer @BBS</p>
@@ -66,16 +62,16 @@
 						</div>
 						
 						<div class="column">
-							<div class="illustrations" id="home">
-								<div class="illustration-wrapper" id="shape">
-									<img src="/img/home-shape.svg" alt="shape" height="120%">
+							<div class="illustrations" id="home-illustrations">
+								<div class="illustration-wrapper shape" id="home-shape">
+									<img src="/img/home-shape.svg" alt="shape">
 								</div>
 
-								<div class="illustration-wrapper" id="girl">
-									<img src="/img/home.svg" alt="Laura Demessine illustration" height="50%">
+								<div class="illustration-wrapper girl" id="home-girl">
+									<img src="/img/home.svg" alt="Laura Demessine illustration">
 								</div>
 								
-								<div class="illustration-wrapper" id="plant" width="30%">
+								<div class="illustration-wrapper plant" id="home-plant">
 									<img src="/img/home-plant.svg" alt="plant">
 								</div>	
 							</div>
@@ -84,22 +80,18 @@
 				</div>	
 			</div>	
 
-		<!-- section : Compétences -->
-		<div class="hero-body">	
-			<div class="container">
-			<h1 class=h1>Compétences</h1>	
+		<!-- Compétences -->
+			<div class="container" id="competences">
+				<h1 class=h1>Compétences</h1>	
 				<div class="columns has-text-centered">
 					<div class="column is-half">
 						<img src="/img/astronaut-girl.svg" width=13% height=auto class=astronaut-girl>
 						<img src="/img/astronaut.svg" class=astronaut-pool>
-						<div class=handwritten if=quality1>Créative</div>
-						<div class=handwritten class=quality2>Curieuse</div>
-						<div class=handwritten class=quality3>Persévérante</div>
 					</div>
 				
 				<!-- Box -->
 					
-						<div class="column is-one-quarter">
+					<div class="column is-one-quarter">
 						<!-- Box: Analytiques --> 
 						<div class="box">
 							<h3 class=h3>Analytiques</h3>
@@ -145,13 +137,10 @@
 					</div>		
 				</div>
 			</div>
-			</div>	
-		</section>
 		<!-- fin section : Compétences -->
 
 		<!-- début section : Formations -->
-		<section id="formations" class="section" class="hero is-fullheight">
-		<div class="hero-body">		
+		<div id="formations" class="section" class="hero is-fullheight">
 			<div class="container">
 			<h1 class=h1>Formations</h1><br></br>
 				<div class="columns has-text-centered">
