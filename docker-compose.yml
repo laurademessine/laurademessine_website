@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=locale
+      - PORT=80
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules

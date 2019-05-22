@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .setTween(timeline)
     .addIndicators()
-    .setPin('section')
+    .setPin('home-illustrations')
     .addTo(controller);
 })

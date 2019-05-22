@@ -111,9 +111,8 @@ HEADER
 }
 
 .menu{
-    position: absolute;
-    top: 0;
-    right: 0;
+ 	display: flex;
+  	justify-content: space-between;
 }
 
 .nav-link {
@@ -132,12 +131,6 @@ li {
     margin-left: 20px;
 }
 
-
-.menu .logo {
-	position: absolute;
-	top:0;
-	left:0;
-}
 
 .header-cv {
 	color: white;
@@ -263,3 +256,8 @@ li {
 	text-align:left;
 }
 
+    
+.logo{
+	width: 18.75rem;
+	height: 4rem;
+}
