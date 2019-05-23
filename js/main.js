@@ -1,3 +1,5 @@
+/*
+
 document.addEventListener('DOMContentLoaded', () => {
 
     console.log("dom loaded")
@@ -31,3 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
     .setPin('home-illustrations')
     .addTo(controller);
 })
+
+*/
