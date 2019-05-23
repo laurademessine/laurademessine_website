@@ -23,7 +23,7 @@ section{
 
 .h1 {
 	font-family: 'Playfair Display', serif;
-	font-size: 31px;
+	font-size: 2rem;
 }
 
 .h2 {
@@ -37,6 +37,11 @@ section{
 	color:#9B9B9B;
 	text-align: center;
 	margin-bottom: 1.05em;
+}
+
+.h4 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
 }
 
 .p {
@@ -149,6 +154,11 @@ li {
 	color: white;
 }
 
+.logo{
+	width: 18.75rem;
+	height: 4rem;
+}
+
 
 /*HOME*/
 .hello {
@@ -242,7 +252,7 @@ li {
 	text-align:left;
 	position:relative;
 	margin-bottom:51%;
-	margin-left: 12px;
+	margin-left: 10%;
 
 
 }
@@ -250,14 +260,26 @@ li {
 .astronaut-pool {
 	top:30;
 	margin-top:30%;
-	margin-left: -50%;
+	margin-left: -52%;
 	position:relative;
 	z-index: -1;
 	text-align:left;
 }
 
     
-.logo{
-	width: 18.75rem;
-	height: 4rem;
+.one {
+	top:100px;
 }
+
+.two {
+	top:200px;
+}
+
+.three {
+	top:-100px;
+}
+
+.four {
+	top:150px;
+}
+
