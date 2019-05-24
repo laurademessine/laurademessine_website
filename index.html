@@ -39,13 +39,13 @@
 		<!-- header -->
 		<div id="menu">
 			<nav class="menu">
-				<img src="/img/header.svg" class="logo" />
+				<a href="/"><img src="/img/header.svg" class="logo" /></a>
 				<ul>
-			      <li><a class="underbar nav-link" href="/#">À propos</a></li>
-			      <li><a class="underbar nav-link" href="/#project">Mes projets</a></li>
+			      <li><a class="underbar nav-link" id="competences" href="/#hello">À propos</a></li>
+			      <li><a class="underbar nav-link" id="formations" href="/#formations">Formations</a></li>
+			      <li><a class="underbar nav-link" id="projects" href="/#projects">Mes projets</a></li>
 			      <li><a class="underbar nav-link" href="mailto:contact@laura-demessine.com">Contact</a></li>
-			      <li><a class="underbar nav-link">Blog</a></li>
-			      <li><a class="header-cv" href="/cv.pdf">Télécharger CV</a></li>
+			      <li><a class="header-cv" href="/cv.pdf" target="_blank">Télécharger CV</a></li>
 			      <li><a class="underbar nav-link" href="/en">EN</a></li>
 			    </ul>
 			</nav>
@@ -60,7 +60,7 @@
 							<p class="position">Digital producer @BBS</p>
 							<p class="p">Je suis chef de projet digital en alternance chez Big Boss Studio, un studio de production digital web et mobile à Paris. J'étudie en parallèle à Grenoble École de Management et j'écris mon mémoire sur comment résoudre les incompatibilités entre design thinking et méthodologie agile.
 							<br>Je suis disponible à partir de Septembre 2019 pour de nouvelles aventures post-diplôme.</p>
-							<button class="button-cv"><a href="/cv.pdf">Télécharger mon CV</a></button>
+							<button class="button-cv"><a href="/cv.pdf" target="_blank">Télécharger mon CV</a></button>
 						</div>
 						
 						<div class="column">
@@ -86,7 +86,7 @@
 		<!-- Compétences -->
 		<section id="competences">
 			<div class="container">
-				<h1 class=h1>01. Compétences</h1>	
+				<h1 class=h1><span class="grey-number">01.</span> Compétences</h1>	
 				<div class="columns has-text-centered">
 					<div class="column is-half">
 						<img src="/img/astronaut-girl.svg" width=13% height=auto class=astronaut-girl>
@@ -146,21 +146,31 @@
 		<!-- fin section : Compétences -->
 
 		<!-- début section : Formations -->
-		<section id="formations" class="section" class="hero is-fullheight">
-			<div class="container">
-			<h1 class=h1>02. Formations</h1><br>
+		<section class="hero is-fullheight">
+			<div class="container" id="formations">
+			<h1 class=h1><span class="grey-number">02.</span> Formations</h1><br>
+				
 				<div class="columns has-text-centered">
 					<div class="column is-half">
 						<img src="/img/business-student.svg" width=55% height=auto alt="business-student">
 						<h4 class=h4>GRENOBLE ÉCOLE DE MANAGEMENT</h4>
 						<p>Master 2 - Diplôme École Supérieur de Management<br> spécialité Systèmes d'Information & du numérique</p>
 					</div>	
+					
 					<div class="column is-half">
-						<img src="/img/ux-student.svg" width=50% height=auto alt="UX student"/>
-						<h4 class=h4>STRATE ÉCOLE DE DESIGN</h4>
-						<p>Master 1 - Partenariat Grenoble EM<br>spécialité design d'intéraction</p>
+						<div>
+							<img src="/img/ux-student.svg" width=50% height=auto alt="UX student"/>
+							<h4 class=h4>STRATE ÉCOLE DE DESIGN</h4>
+							<p>Master 1 - Partenariat Grenoble EM<br>spécialité design d'intéraction</p>
+						</div>
+
+						<div class="formation-plant">
+							<img src="/img/formation_plant.svg" width="50%">
+						</div>
+
 					</div>
 				</div>
+
 			</div>
 		</section>	
 		<!-- fin section : Formations -->
@@ -169,11 +179,11 @@
 		<section id="experiences" class="section" class="hero is-fullheight">
 			<div class="hero-body">	
 				<div class="container">
-				<h1 class=h1>03. Expériences</h1><br>	
+				<h1 class=h1><span class="grey-number">03.</span> Expériences</h1><br>	
 					<div class="columns has-text-centered">
 						<div class="column is-one-quarter">
 						<!-- Box: BBS --> 
-							<div class="box one">
+							<div class="box exp-one">
 								<img src="/img/company-bbs.svg" alt="bbs" width="70%" />
 								<br></br>
 								<h4 class="h4">Digital producer<br>
@@ -184,7 +194,7 @@
 					
 						<div class="column">		
 						<!-- Box: PMC --> 
-							<div class="box two" >
+							<div class="box exp-two" >
 								<img src="/img/company-pmc.svg" alt="pmc" width="70%"/>
 								<br></br>
 								<h4 class="h4">Consultante & biz’ dev<br>
@@ -195,7 +205,7 @@
 
 						<div class="column">		
 						<!-- Box: PMC --> 
-							<div class="box three">
+							<div class="box exp-three">
 								<img src="/img/company-betc.svg" alt="betc" width="70%"/>
 								<br></br>
 								<h4 class="h4">Chef de projet digital<br>
@@ -206,14 +216,27 @@
 
 						<div class="column">		
 							<!-- Box: PMC --> 
-							<div class="box four">
+							<div class="box exp-four">
 								<img src="/img/company-setra.svg" alt="setra" width="70%"/>
 								<br>
 								<h4 class="h4">Chef de projet e-CRM<br>
 								2016 – stage 3 mois</h4><br>
 								<p>Réponses aux appels d’offre sur l’activité consulting, conception UX/UI, gestion d’événement, création de contenu </p>
 							</div>	
-						</div>			
+						</div>	
+
+						<div class="exp-walking">
+							<img src="/img/exp_girl_walking.svg" alt="walking girl">
+						</div>
+
+						<div class="exp-plant-1">
+							<img src="/img/exp_plant_1.svg" alt="plant">
+						</div>
+
+						<div class="exp-plant-2">
+							<img src="/img/exp_plant_2.svg" alt="plant">
+						</div>
+
 					</div>
 				</div>		
 			</div>
@@ -221,9 +244,9 @@
 		<!-- fin section : Expériences -->
 
 		<!-- début section : Portfolio -->
-		<section id="portfolio" class="section" class="hero is-fullheight">
+		<section id="projects" class="section" class="hero is-fullheight">
 			<div class="block">
-			<h1 class=h1>04. Portfolio</h1>
+			<h1 class=h1><span class="grey-number">04.</span> Portfolio</h1>
 
 			</div>
 		</section>	
@@ -232,14 +255,14 @@
 		<!-- début section : En résumé -->
 		<section id="sumup" class="section" class="hero is-fullheight">
 			<div class="hero-body">
-				<h1 class=h1>05. En résumé</h1>
-				<div class="block">
+				<h1 class=h1><span class="grey-number">05.</span> En résumé</h1>
+				<div class="columns">
 					<div class="column is-half">
-						<img src="/img/sumup.svg" alt="sumup">
+						<img src="/img/sumup.svg" alt="sumup" width="80%">
 					</div>
 
 					<div class="column">
-						<div class=handwritten>Étudiante à Grenoble Ecole de Management, je cherche un emploi en tant que chef de projet digital, un poste mêlant gestion de projet, agilité et design thinking. </br>Si mon profil a retenu votre attention, <a href=#contact>contactez-moi</a> pour convenir d'un entretien.	</div>
+						<div class="handwritten">Étudiante à Grenoble Ecole de Management, je cherche un emploi en tant que chef de projet digital, un poste mêlant gestion de projet, agilité et design thinking. </br>Si mon profil a retenu votre attention, <a mailto:laura.demessine@gmail.com><span class="handwritten underbar-contact">contactez-moi</span></a> pour convenir d'un entretien.	</div>
 					</div>
 				</div>	
 			</div>	
@@ -253,11 +276,9 @@
 			</div>
 		</section>	
 		 section : Blog -->
-		 <section>
-		 	<div class="container">
-		 		<p> Laura Demessine — 2019
-		 	</div>	
-		 </section>
+		<div>
+	 		<p class="has-text-centered"> Laura Demessine — 2019
+	 	</div>	
 
 
 		<!-- JS -->
